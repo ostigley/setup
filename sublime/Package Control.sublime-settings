@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"Better CoffeeScript",
+		"Cucumber",
+		"Gherkin (Cucumber) Formatter",
+		"GitGutter",
+		"Jade",
+		"Package Control",
+		"RubyTest",
+		"Sass",
+		"Stylus",
+		"SublimeERB",
+		"SublimeLinter",
+		"SublimeLinter-html-tidy",
+		"SublimeLinter-jshint",
+		"SublimeLinter-rubocop",
+		"TrailingSpaces",
+		"TypeScript"
+	]
+}
