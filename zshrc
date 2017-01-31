@@ -84,6 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 alias ntl="cd  && cd workspace/natlib"
+alias kkp="cd  && cd workspace/kakapo"
 alias rspec="clear && rspec"
 alias tepuna="rspec spec/mailers/te_puna_payment_mailer_spec.rb spec/controllers/te_puna_payments_controller_spec.rb spec/lib/pxfusion_spec.rb spec/lib/payment_express_payment_spec.rb spec/lib/payment_express_session_spec.rb spec/features/natlib/te_puna_foundation/show_spec.rb"
 
