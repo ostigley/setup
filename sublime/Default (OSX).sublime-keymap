@@ -1,4 +1,14 @@
 [
   {"keys": ["alt+z"], "command": "insert_snippet", "args": {"contents": "console.log()"}},
-  { "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" },
+  { "keys": ["command+shift+."], "command": "erb", "context":
+      [
+        { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
+      ]
+    },
+    { "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" },
+    { "keys": ["super+forward_slash"], "command": "toggle_comment", "args": { "block": false } },
+    { "keys": ["super+alt+forward_slash"], "command": "toggle_comment", "args": { "block": true } },
+    { "keys": ["command+shift+r"], "command": "reindent"}
+
 ]
+
