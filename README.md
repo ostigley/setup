@@ -6,3 +6,6 @@ I keep all my sublime and zsh settings here
 
 # Preferences.sublime-settings
 `cmd+,`
+
+# Key bindings
+`cmd+shift+p: Preferences: Key Bindings`
