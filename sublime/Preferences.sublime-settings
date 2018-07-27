@@ -1,9 +1,27 @@
 {
+	"binary_file_patterns":
+	[
+		"**/node_modules/*.*",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.tags"
+	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/Cobalt (SL).tmTheme",
+	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
 	"fade_fold_buttons": false,
-	"font_size": 13,
+	"font_size": 16,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
@@ -15,5 +33,6 @@
 	"remember_open_files": false,
 	"show_errors_inline": false,
 	"tab_size": 2,
+	"theme": "Agila Origin.sublime-theme",
 	"translate_tabs_to_spaces": true
 }

@@ -5,12 +5,19 @@
 	],
 	"installed_packages":
 	[
+		"Agila Theme",
 		"Babel",
 		"Better CoffeeScript",
+		"Color Highlighter",
+		"CTags",
 		"Cucumber",
+		"Dracula Color Scheme",
+		"Ethereum",
 		"Gherkin (Cucumber) Formatter",
 		"GitGutter",
+		"Haml",
 		"Jade",
+		"MarkdownLivePreview",
 		"Package Control",
 		"RubyTest",
 		"Sass",
@@ -18,10 +25,13 @@
 		"SublimeERB",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-eslint",
 		"SublimeLinter-html-tidy",
 		"SublimeLinter-jshint",
 		"SublimeLinter-rubocop",
+		"Terraform",
 		"TrailingSpaces",
-		"TypeScript"
+		"TypeScript",
+		"Vue Syntax Highlight"
 	]
 }
