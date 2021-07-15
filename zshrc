@@ -1,15 +1,55 @@
 # Aliases
-alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
-alias ntl="cd  && cd workspace/natlib"
-alias kkp="cd  && cd workspace/kakapo"
-alias ntl="cd  && cd workspace/natlib"
-alias kbtoken="kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}') | grep token: | sed s/token:// | sed 's/ //g' | pbcopy"
-alias kubectlp="kubectl --namespace=production"
-alias kubectls="kubectl --namespace=staging"
-alias kubectlu="kubectl --namespace=uat"
-alias kubectlk="kubectl --namespace=kube-system"
-alias kubectld="kubectl --namespace=default"
-alias kubectlg="kubectl --namespace=gitlab"
-alias prometheus="kubectlk port-forward $(kubectlk get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' | grep prometheus-server) 9090"
-alias alertmanager="kubectlk port-forward $(kubectlk get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' | grep prometheus-alertmanager) 9093"
 
+lazynvm() {
+  unset -f nvm node npm npx yarn rails
+  export NVM_DIR=~/.nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+}
+
+nvm() {
+  lazynvm
+  nvm $@
+}
+
+node() {
+  lazynvm
+  node $@
+}
+
+npm() {
+  lazynvm
+  npm $@
+}
+
+npx() {
+  lazynvm
+  npx $@
+}
+
+yarn() {
+  lazynvm
+  yarn $@
+}
+
+rails() {
+  lazynvm
+  rails $@
+}
+
+function acl() {
+  # Usage:
+  # acl aws-boost
+  code=$(ykman oath accounts code $1)
+  token=$(echo $code | awk -F"$ykprofile  " '{print $2}')
+  echo $token
+  eval `aws-mfa-login --profile $1 --token=$token`
+}
+
+function mfa () {
+  # Usage:
+  # mfa aws-boost
+  ykprofile=$1
+  key=$(ykman oath accounts code $ykprofile)
+  echo $key | awk -F "$ykprofile  " '{print $2}' | pbcopy
+  key=""
+}
