@@ -1,3 +1,4 @@
+ZSH_THEME="robbyrussell"
 # Aliases
 
 lazynvm() {
